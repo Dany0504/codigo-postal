@@ -34,7 +34,12 @@ public class EncontrarCodigo {
                     }
                 }
 
+                // Si no se encuentra el código postal
+                if (!encontrado) {
+                    System.out.println("Código Postal: " + codigoPostal + " no encontrado.");
+                }
 
+                br.reset(); // Volver al principio del archivo para buscar el siguiente código postal
             }
         } catch (IOException e) {
             e.printStackTrace();
